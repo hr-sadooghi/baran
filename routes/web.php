@@ -36,3 +36,7 @@ Route::get('home', 'HomeController@index')->name('home');
 Route::get('orders/create', 'OrderController@create')->name('order_create');
 Route::post('orders/store', 'OrderController@store')->name('order_store');
 Route::get('orders', 'OrderController@index')->name('order_list');
+
+
+Route::get('e-wallet', 'EWalletController@index');
+Route::get('e-wallet/transaction', 'EWalletTransactionController@index');

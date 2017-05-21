@@ -16,6 +16,7 @@ class CreateEWalletTransactionsTable extends Migration
         Schema::create('e_wallet_transactions', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('amount');
+            $table->integer('e_wallet_id');
             $table->text('detail');
             $table->timestamps();
             $table->softDeletes();
